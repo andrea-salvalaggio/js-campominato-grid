@@ -53,3 +53,7 @@ main {
 .square {
     border: 2px solid #000;
 }
+
+.square.active {
+    background-color: #fb7ac7;
+}
