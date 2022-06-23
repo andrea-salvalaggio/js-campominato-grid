@@ -33,7 +33,7 @@ main {
     display: flex;
 }
 
-.justify-content-sb {
+.j-cnt-sb {
     justify-content: space-between;
 }
 
@@ -47,6 +47,11 @@ main {
     float: left;
     width: calc(100% / 10);
     height: calc(100% / 10);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 #container-wrapper,
