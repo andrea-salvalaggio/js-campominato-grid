@@ -8,3 +8,10 @@
 // Richiamo il container della griglia tramite il suo id
 const wrapContainer = document.getElementById('container-wrapper');
 
+// Creo una funzione per generare la griglia
+function createNewSquare() {
+    const currentSquare = document.createElement('div');
+    currentSquare.classList.add('square');
+    return currentSquare;
+}
+
