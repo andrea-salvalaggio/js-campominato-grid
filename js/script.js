@@ -8,13 +8,6 @@
 // Richiamo il container della griglia tramite il suo id
 const wrapContainer = document.getElementById('container-wrapper');
 
-// Creo una funzione per generare i quadrati
-function createNewSquare() {
-    const currentSquare = document.createElement('div');
-    currentSquare.classList.add('square');
-    return currentSquare;
-}
-
 // L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
 const playButton = document.querySelector('.play-button');
 
@@ -43,4 +36,11 @@ playButton.addEventListener('click', function () {
         wrapContainer.append(newSquare);
     }
 })
+
+// Creo una funzione per generare i quadrati
+function createNewSquare() {
+    const currentSquare = document.createElement('div');
+    currentSquare.classList.add('square');
+    return currentSquare;
+}
 
