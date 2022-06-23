@@ -18,8 +18,12 @@ for (let i = 1; i < 101; i++) {
     // Aggiungo il click al quadrato
     newSquare.addEventListener('click', function () {
         newSquare.classList.toggle('active');
+
+        // Stampo in console il numero del quadrato cliccato
+        console.log(i);
     })
 
+    // Aggiungo la griglia al parent
     wrapContainer.append(newSquare);
 }
 
@@ -29,4 +33,7 @@ function createNewSquare() {
     currentSquare.classList.add('square');
     return currentSquare;
 }
+
+// L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
+const playButton = document.querySelector('play-button');
 
